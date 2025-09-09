@@ -14,8 +14,8 @@ COPY . .
 
 # Set environment variables
 ENV OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
-ENV VECTOR_STORE_TYPE=hybrid_offline  # Force hybrid_offline in Docker
-ENV CACHE_DIR=/tmp  # Use tmp directory for cache
+ENV VECTOR_STORE_TYPE=hybrid_offline  
+ENV CACHE_DIR=/tmp  
 
 # Create a non-root user to run the application
 RUN useradd --create-home --shell /bin/bash appuser
