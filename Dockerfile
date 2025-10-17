@@ -23,4 +23,4 @@ USER appuser
 
 # Command to run the application
 # Secret files will be mounted by Northflank at /run/secrets/
-CMD ["python", "-m", "kssrag.cli", "server", "--host", "0.0.0.0", "--file", "/run/secrets/info.txt", "--system-prompt", "/run/secrets/custom_prompt.txt", "--port", "8000", "--vector-store", "hybrid_offline"]
+CMD ["python", "-m", "kssrag.cli", "server", "--host", "0.0.0.0", "--file", "/run/secrets/info.txt", "--system-prompt", "/run/secrets/custom_prompt.txt", "--port", "8000", "--vector-store", "bm25s"]
