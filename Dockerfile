@@ -16,7 +16,7 @@ COPY . .
 ENV PROVIDER=groq
 ENV GROQ_API_KEY=$[GROQ_API_KEY]
 ENV DEFAULT_MODEL=openai/gpt-oss-20b
-ENV FALLBACK_MODELS=qwen/qwen3.6-27b,groq/compound-mini
+# ENV FALLBACK_MODELS=qwen/qwen3.6-27b,groq/compound-mini
 ENV VECTOR_STORE_TYPE=hybrid_offline
 ENV CACHE_DIR=/tmp
 
