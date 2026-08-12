@@ -27,4 +27,4 @@ USER appuser
 # Command to run the application
 # Secret files will be mounted by Northflank at /run/secrets/
 # Clear the cache directory to force kssarg to rebuild the b2s5s index from the latest secrets, then start the server
-CMD ["/bin/bash", "-c", "rm -rf /tmp/* && python -m kssrag.cli server --host 0.0.0.0 --file /run/secrets/info.txt --system-prompt /secrets/custom_prompt.txt --port 8000 --vector-store bm25s"]
+CMD ["/bin/bash", "-c", "rm -rf /tmp/* && python -m kssrag.cli server --host 0.0.0.0 --file /run/secrets/info.txt --system-prompt /run/secrets/custom_prompt.txt --port 8000 --vector-store bm25s"]
